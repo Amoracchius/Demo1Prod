@@ -9,9 +9,9 @@
 <form method="post">
 <input type="hidden" value="${product.id}" name="id" />
 <label>Name</label><br>
-<input name="name" value="${product.name}" /><br><br>
+<input name="name" value= ${product.name} /><br><br>
 <label>Price</label><br>
-<input name="price" value="${product.price}" type="number" min="100" /><br><br>
+<input name="price" value= ${product.price} type="number" min="100" /><br><br>
 <input type="submit" value="Send" />
 </form>
 </body>

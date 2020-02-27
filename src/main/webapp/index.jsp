@@ -6,11 +6,11 @@
 <title>Products</title>
 </head>
 <body>
-<h2>Products List(Changed)</h2>
+<h2>Products List</h2>
 <p><a href='<c:url value="/create" />'>Create new</a></p>
 <table>
 <tr><th>Name</th><th>Price</th><th></th></tr>
-<c:forEach var="product" items="${products}">
+<c:forEach items="${products}" var="product">
  <tr><td>${product.name}</td>
     <td>${product.price}</td>
     <td>

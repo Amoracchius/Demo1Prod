@@ -19,7 +19,7 @@ public class EditServlet extends HttpServlet {
             int id = Integer.parseInt(request.getParameter("id"));
             Product product = ProductDB.selectOne(id);
             
-            if(product!=null) {
+            if(product != null) {
                 request.setAttribute("product", product);
                 getServletContext().getRequestDispatcher("/edit.jsp").forward(request, response);
             }
