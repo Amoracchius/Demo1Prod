@@ -19,7 +19,7 @@ public class EditServlet extends HttpServlet {
             int id = Integer.parseInt(request.getParameter("id"));
             Product product = ProductDB.selectOne(id);
             
-            if(product != null) {
+            if (product != null) {
                 request.setAttribute("product", product);
                 getServletContext().getRequestDispatcher("/edit.jsp").forward(request, response);
             }
@@ -27,7 +27,7 @@ public class EditServlet extends HttpServlet {
                 getServletContext().getRequestDispatcher("/notfound.jsp").forward(request, response);
             }
             
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             getServletContext().getRequestDispatcher("/notfound.jsp").forward(request, response);
         }
     }
@@ -42,7 +42,7 @@ public class EditServlet extends HttpServlet {
             Product product = new Product(id, name, price);
             ProductDB.update(product);
             response.sendRedirect(request.getContextPath() + "/index");
-        } catch(Exception ex) {
+        } catch (Exception ex) {
              
             getServletContext().getRequestDispatcher("/notfound.jsp").forward(request, response);   
         }

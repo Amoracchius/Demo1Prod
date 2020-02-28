@@ -17,7 +17,7 @@ public class DeleteServlet extends HttpServlet {
             int id = Integer.parseInt(request.getParameter("id"));
 			ProductDB.delete(id);
             response.sendRedirect(request.getContextPath() + "/index");
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             getServletContext().getRequestDispatcher("/notfound.jsp").forward(request, response);
         }
     }

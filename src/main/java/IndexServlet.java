@@ -13,12 +13,12 @@ import mysql.business.ProductDB;
  
 @WebServlet("/index")
 public class IndexServlet extends HttpServlet {
-     
+	
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
         throws ServletException, IOException {
+			
         ArrayList<Product> products = ProductDB.select();
         request.setAttribute("products", products);
-          
         getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

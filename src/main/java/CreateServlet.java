@@ -27,7 +27,7 @@ public class CreateServlet extends HttpServlet {
             Product product = new Product(name, price);
             ProductDB.insert(product);
             response.sendRedirect(request.getContextPath()+"/index");
-        } catch(Exception ex) {
+        } catch (Exception ex) {
              
             getServletContext().getRequestDispatcher("/create.jsp").forward(request, response); 
         }
