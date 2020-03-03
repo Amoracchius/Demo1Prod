@@ -11,7 +11,7 @@ import mysql.business.Product;
 import mysql.business.ProductDB;
  
  
-@WebServlet("/index")
+@WebServlet("")
 public class IndexServlet extends HttpServlet {
 	
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
