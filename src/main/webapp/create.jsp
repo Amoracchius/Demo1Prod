@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 <title>Create product</title>
 </head>
 <body>
