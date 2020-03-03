@@ -41,7 +41,7 @@ public class EditServlet extends HttpServlet {
             int price = Integer.parseInt(request.getParameter("price"));
             Product product = new Product(id, name, price);
             ProductDB.update(product);
-            response.sendRedirect(request.getContextPath() + "/index");
+            response.sendRedirect(request.getContextPath());
         } catch (Exception ex) {
              
             getServletContext().getRequestDispatcher("/notfound.jsp").forward(request, response);   
