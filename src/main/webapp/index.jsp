@@ -16,10 +16,10 @@
  <tr><td>${product.name}</td>
     <td>${product.price}</td>
     <td>
-    <a href='<c:url value="/edit?id=${product.id}" />'>Edit</a> |
+    <a href='<c:url value="/edit?id=${product.id}" />' class="edit-btn">Edit</a> |
     <form method="post" action='<c:url value="/delete" />' style="display:inline;">
         <input type="hidden" name="id" value="${product.id}">
-        <input type="submit" value="Delete">
+        <input type="submit" value="Delete" class="delete-btn">
     </form>
  </td></tr>
 </c:forEach>

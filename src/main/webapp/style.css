@@ -1,12 +1,22 @@
 *, head body{margin: 0; padding: 0; text-decoration: none; list-style: none; otline: none; font-family: 'Oswald', sans-serif;}
+body{
+display: flex;
+flex-flow: column;
+align-items: center;
+}
 h2, h3{
     color: #eecd63;
     font-weight: bold;
     font-size: 32px;
 }
-.edit-btn, .delete-btn{
-    width: 150px;
-    height: 50px;
+input[type=text], input[type=number]{
+border: none;
+border-bottom: 1px solid black;
+font-weight: bold;
+margin: 5px 0;
+}
+.save-btn, .edit-btn, .delete-btn{
+padding: 0px 10px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -15,8 +25,11 @@ h2, h3{
     border: 2px solid #ffffff;
     transition: .5s;
     border-radius: 5px;
+border: none;
+font-size: 14px;
+width: 100px;
 }
-.edit-btn:hover, delete-btn:hover{
+.edit-btn:hover, .delete-btn:hover, .save-btn:hover{
     background: #ffffff;
     border: 2px solid darkslategray;
     color: darkslategray;
@@ -37,14 +50,10 @@ h2, h3{
     border: 2px solid #eecd63;
     color: #eecd63;
 }
-input{
-    border: none;
-    border-bottom: 1px solid black;
-    padding: 0 2px;
-    color: #eecd63;
-    font-weight: bold;
-}
+
 label{
     font-size: 21px;
     color: brown;
+font-weight: bold;
+text-transform: uppercase;
 }
